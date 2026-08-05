@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Astraea Industries | IT Asset Procurement</title>
+
+  <meta
+    name="description"
+    content="Astraea Industries provides IT asset procurement, deployment, and lifecycle management solutions for government and public-sector organizations."
+  />
+
+  <style>
+    :root {
+      --navy: #101b2d;
+      --navy-light: #172942;
+      --gold: #c6a15b;
+      --white: #f7f8fa;
+      --gray: #a9b0bc;
+      --border: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(16, 27, 45, 0.95);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: grid;
+      align-items: center;
+      padding: 100px 0;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(198, 161, 91, 0.13), transparent 30%),
+        linear-gradient(180deg, var(--navy), #0b1423);
+    }
+
+    .eyebrow {
+      margin-bottom: 18px;
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin-bottom: 24px;
+      font-size: clamp(2.7rem, 7vw, 5.5rem);
+      line-height: 1.03;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-text {
+      max-width: 680px;
+      margin-bottom: 36px;
+      color: var(--gray);
+      font-size: 1.15rem;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-secondary:hover {
+      background: rgba(198, 161, 91, 0.1);
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 15px;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .section-heading p {
+      color: var(--gray);
+    }
+
+    .services {
+      background: var(--navy-light);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .card-number {
+      margin-bottom: 25px;
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      color: var(--gray);
+      font-size: 0.96rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .about-grid p {
+      margin-bottom: 18px;
+      color: var(--gray);
+    }
+
+    .details {
+      border-top: 1px solid var(--border);
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .detail-row span:first-child {
+      color: var(--gray);
+    }
+
+    .contact {
+      text-align: center;
+      background: #0b1423;
+    }
+
+    .contact p {
+      max-width: 620px;
+      margin: 0 auto 30px;
+      color: var(--gray);
+    }
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .card-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#home">
+        ASTRAEA <span>INDUSTRIES</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="eyebrow">Public-Sector Technology Solutions</p>
+
+        <h1>IT Asset Procurement & Lifecycle Management</h1>
+
+        <p class="hero-text">
+          Astraea Industries helps government and public-sector organizations
+          source, deploy, and manage dependable commercial technology solutions.
+        </p>
+
+        <div class="button-row">
+          <a
+            class="button button-primary"
+            href="mailto:sales@astraeaindustries.com?subject=Request%20for%20Quote"
+          >
+            Request a Quote
+          </a>
+
+          <a class="button button-secondary" href="#services">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What We Do</p>
+          <h2>Technology support from acquisition through deployment.</h2>
+          <p>
+            Our services are structured around the complete lifecycle of
+            end-user and infrastructure technology.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <p class="card-number">01</p>
+            <h3>IT Asset Procurement</h3>
+            <p>
+              Computers, monitors, networking equipment, power protection,
+              software, peripherals, and related commercial technology.
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card-number">02</p>
+            <h3>White-Glove Deployment</h3>
+            <p>
+              Asset tagging, inventory documentation, device configuration,
+              endpoint enrollment, and user-ready deployment.
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card-number">03</p>
+            <h3>Lifecycle Management</h3>
+            <p>
+              Technology refresh planning, inventory management, warranty
+              coordination, and asset retirement support.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About Astraea</p>
+          <h2>Responsive procurement backed by technical experience.</h2>
+        </div>
+
+        <div>
+          <p>
+            Astraea Industries LLC is a New Jersey-based small business focused
+            on IT asset procurement and lifecycle services for government,
+            education, and other public-sector organizations.
+          </p>
+
+          <p>
+            We combine practical technology experience with a disciplined,
+            customer-focused procurement process designed to deliver accurate
+            solutions, clear communication, and dependable execution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="capabilities">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Company Information</p>
+          <h2>Core business classifications</h2>
+        </div>
+
+        <div class="details">
+          <div class="detail-row">
+            <span>Legal Name</span>
+            <strong>Astraea Industries LLC</strong>
+          </div>
+
+          <div class="detail-row">
+            <span>Primary NAICS</span>
+            <strong>423430</strong>
+          </div>
+
+          <div class="detail-row">
+            <span>Secondary NAICS</span>
+            <strong>541519</strong>
+          </div>
+
+          <div class="detail-row">
+            <span>Business Type</span>
+            <strong>Small Business</strong>
+          </div>
+
+          <div class="detail-row">
+            <span>UEI / CAGE</span>
+            <strong>Pending</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <p class="eyebrow">Start a Conversation</p>
+        <h2>Have an upcoming technology requirement?</h2>
+
+        <p>
+          Contact Astraea Industries to discuss product sourcing, deployment
+          requirements, or an upcoming request for quotation.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="mailto:sales@astraeaindustries.com?subject=Technology%20Requirement"
+        >
+          sales@astraeaindustries.com
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>© 2026 Astraea Industries LLC</span>
+      <span>New Jersey, United States</span>
+    </div>
+  </footer>
+</body>
+</html>
