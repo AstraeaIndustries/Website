@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0b1625" />
 
-  <title>Astraea Industries | Government IT Procurement</title>
+  <title>Astraea Industries | Government & Public-Sector IT Hardware Procurement</title>
 
   <meta
     name="description"
-    content="Astraea Industries provides responsive commercial IT hardware procurement and lifecycle support for federal, state, local, and education customers."
+    content="Astraea Industries LLC is a New Jersey small business supplying commercial off-the-shelf IT hardware to federal, state, local government and education customers."
   />
+
+  <meta
+    name="keywords"
+    content="government IT procurement, public sector IT hardware, government technology supplier, COTS IT hardware, New Jersey government contractor, computer hardware procurement, education technology procurement"
+  />
+
+  <meta name="robots" content="index, follow" />
 
   <style>
     :root {
@@ -25,10 +32,10 @@
       --text: #f5f7fa;
       --muted: #aab4c2;
 
-      --border: rgba(255, 255, 255, 0.12);
-      --surface: rgba(255, 255, 255, 0.035);
+      --border: rgba(255,255,255,.12);
+      --surface: rgba(255,255,255,.035);
 
-      --shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+      --shadow: 0 20px 50px rgba(0,0,0,.22);
       --radius: 14px;
     }
 
@@ -45,7 +52,6 @@
     body {
       background: var(--navy-900);
       color: var(--text);
-
       font-family:
         Inter,
         ui-sans-serif,
@@ -54,7 +60,6 @@
         BlinkMacSystemFont,
         "Segoe UI",
         sans-serif;
-
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
@@ -94,28 +99,24 @@
     }
 
     .eyebrow {
-      margin-bottom: 14px;
-
       color: var(--gold-soft);
-
-      font-size: 0.78rem;
+      font-size: .78rem;
       font-weight: 800;
-
-      letter-spacing: 0.18em;
+      letter-spacing: .18em;
       text-transform: uppercase;
+      margin-bottom: 14px;
     }
 
     h1,
     h2,
     h3 {
       line-height: 1.1;
-      letter-spacing: -0.025em;
+      letter-spacing: -.025em;
     }
 
     h1 {
-      max-width: 900px;
-
       font-size: clamp(3rem, 7vw, 5.6rem);
+      max-width: 900px;
     }
 
     h2 {
@@ -127,11 +128,9 @@
     }
 
     .lead {
-      max-width: 720px;
-
       color: var(--muted);
-
       font-size: 1.13rem;
+      max-width: 720px;
     }
 
     .section-heading {
@@ -148,60 +147,45 @@
     }
 
 
-    /* ================================
-       HEADER / NAVIGATION
-       ================================ */
+    /* ========================================
+       HEADER
+       ======================================== */
 
     header {
       position: sticky;
       top: 0;
       z-index: 50;
-
-      background: rgba(8, 17, 30, 0.90);
-
-      border-bottom: 1px solid var(--border);
-
+      background: rgba(8,17,30,.92);
       backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
     }
 
     nav {
       min-height: 78px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 28px;
     }
 
     .brand {
       display: flex;
       align-items: center;
-
       gap: 12px;
-
       min-width: 0;
     }
-
-    /*
-      Small PNG logo used ONLY in the navigation.
-    */
 
     .brand img {
       width: 46px;
       height: 46px;
-
       object-fit: cover;
       object-position: 50% 14%;
-
       border-radius: 10px;
     }
 
     .brand-text {
       font-weight: 800;
-
-      letter-spacing: 0.1em;
-
+      letter-spacing: .1em;
       white-space: nowrap;
     }
 
@@ -212,12 +196,13 @@
     .nav-links {
       display: flex;
       align-items: center;
-
       gap: 26px;
-
       color: var(--muted);
+      font-size: .93rem;
+    }
 
-      font-size: 0.93rem;
+    .nav-links a {
+      transition: color .18s ease;
     }
 
     .nav-links a:hover {
@@ -225,40 +210,34 @@
     }
 
     .nav-cta {
-      padding: 10px 14px;
-
-      border-radius: 8px;
-
-      background: var(--gold-soft);
       color: var(--navy-950) !important;
-
+      background: var(--gold-soft);
+      padding: 10px 14px;
+      border-radius: 8px;
       font-weight: 800;
     }
 
 
-    /* ================================
+    /* ========================================
        HERO
-       ================================ */
+       ======================================== */
 
     .hero {
       position: relative;
-
       overflow: hidden;
-
       min-height: 760px;
-
       display: grid;
       align-items: center;
 
       background:
         radial-gradient(
           circle at 82% 22%,
-          rgba(201, 160, 77, 0.16),
+          rgba(201,160,77,.16),
           transparent 28%
         ),
         radial-gradient(
           circle at 20% 80%,
-          rgba(255, 255, 255, 0.04),
+          rgba(255,255,255,.04),
           transparent 28%
         ),
         linear-gradient(
@@ -270,18 +249,12 @@
 
     .hero::after {
       content: "";
-
       position: absolute;
-
       inset: auto -10% -38% auto;
-
       width: 520px;
       height: 520px;
-
-      border: 1px solid rgba(227, 199, 124, 0.12);
-
+      border: 1px solid rgba(227,199,124,.12);
       transform: rotate(45deg);
-
       pointer-events: none;
     }
 
@@ -290,15 +263,12 @@
       z-index: 1;
 
       display: grid;
-
       grid-template-columns:
         minmax(0, 1.25fr)
-        minmax(340px, 0.75fr);
+        minmax(340px, .75fr);
 
       gap: 66px;
-
       align-items: center;
-
       padding: 110px 0 95px;
     }
 
@@ -309,28 +279,26 @@
     .button-row {
       display: flex;
       flex-wrap: wrap;
-
       gap: 14px;
     }
 
     .button {
-      min-height: 48px;
-
       display: inline-flex;
       align-items: center;
       justify-content: center;
 
+      min-height: 48px;
       padding: 0 20px;
 
-      border: 1px solid var(--gold-soft);
       border-radius: 8px;
+      border: 1px solid var(--gold-soft);
 
       font-weight: 800;
 
       transition:
-        transform 0.18s ease,
-        background 0.18s ease,
-        border-color 0.18s ease;
+        transform .18s ease,
+        background .18s ease,
+        border-color .18s ease;
     }
 
     .button:hover {
@@ -343,25 +311,16 @@
     }
 
     .button-secondary {
-      background: rgba(227, 199, 124, 0.04);
       color: var(--text);
+      background: rgba(227,199,124,.04);
     }
 
 
-    /*
-      LARGE FRONT-PAGE SVG LOGO
-
-      The old version forced an aspect ratio and used
-      object-fit: cover, which caused the logo to crop.
-
-      This version lets the SVG maintain its natural
-      proportions.
-    */
+    /* Large front-page SVG logo */
 
     .hero-mark {
       width: 100%;
       max-width: 520px;
-
       margin-left: auto;
 
       display: flex;
@@ -373,8 +332,7 @@
       border: 1px solid var(--border);
       border-radius: 24px;
 
-      background: rgba(255, 255, 255, 0.025);
-
+      background: rgba(255,255,255,.025);
       box-shadow: var(--shadow);
 
       overflow: hidden;
@@ -382,47 +340,43 @@
 
     .hero-mark img {
       display: block;
-
       width: 100%;
       height: auto;
-
       max-width: 100%;
-
       object-fit: contain;
     }
 
 
-    /* ================================
-       TRUST STRIP
-       ================================ */
+    /* ========================================
+       FEDERAL / REGISTRATION STRIP
+       ======================================== */
 
     .trust-strip {
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-
-      background: rgba(255, 255, 255, 0.018);
+      background: rgba(255,255,255,.018);
     }
 
     .trust-grid {
-      min-height: 92px;
-
+      min-height: 100px;
       display: grid;
-
       grid-template-columns: repeat(4, 1fr);
-
-      align-items: center;
+      align-items: stretch;
     }
 
     .trust-item {
-      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
+      padding: 20px 24px;
       text-align: center;
 
       color: var(--muted);
 
       border-right: 1px solid var(--border);
 
-      font-size: 0.92rem;
+      font-size: .88rem;
     }
 
     .trust-item:last-child {
@@ -431,47 +385,37 @@
 
     .trust-item strong {
       display: block;
-
-      margin-bottom: 2px;
-
       color: var(--text);
+      margin-bottom: 3px;
+      font-size: .98rem;
     }
 
 
-    /* ================================
-       PRODUCT CARDS
-       ================================ */
+    /* ========================================
+       CARDS
+       ======================================== */
 
     .grid-3 {
       display: grid;
-
       grid-template-columns: repeat(3, 1fr);
-
       gap: 20px;
     }
 
     .card {
-      min-height: 100%;
-
       padding: 30px;
-
       border: 1px solid var(--border);
       border-radius: var(--radius);
-
       background: var(--surface);
+      min-height: 100%;
     }
 
     .card-kicker {
-      margin-bottom: 18px;
-
       color: var(--gold-soft);
-
-      font-size: 0.78rem;
+      font-size: .78rem;
       font-weight: 800;
-
-      letter-spacing: 0.14em;
-
+      letter-spacing: .14em;
       text-transform: uppercase;
+      margin-bottom: 18px;
     }
 
     .card h3 {
@@ -481,36 +425,29 @@
     .card p,
     .card li {
       color: var(--muted);
-
-      font-size: 0.96rem;
+      font-size: .96rem;
     }
 
     .card ul {
-      display: grid;
-
-      gap: 9px;
-
       list-style: none;
+      display: grid;
+      gap: 9px;
     }
 
     .card li::before {
       content: "—";
-
-      margin-right: 9px;
-
       color: var(--gold-soft);
+      margin-right: 9px;
     }
 
 
-    /* ================================
+    /* ========================================
        MARKETS
-       ================================ */
+       ======================================== */
 
     .market-grid {
       display: grid;
-
       grid-template-columns: repeat(5, 1fr);
-
       gap: 14px;
     }
 
@@ -520,25 +457,21 @@
       border: 1px solid var(--border);
       border-radius: 12px;
 
-      background: rgba(255, 255, 255, 0.02);
+      background: rgba(255,255,255,.02);
 
       text-align: center;
-
       font-weight: 750;
     }
 
 
-    /* ================================
-       PROCUREMENT PROCESS
-       ================================ */
+    /* ========================================
+       PROCESS
+       ======================================== */
 
     .process {
       display: grid;
-
       grid-template-columns: repeat(5, 1fr);
-
       gap: 12px;
-
       counter-reset: step;
     }
 
@@ -550,80 +483,68 @@
       border: 1px solid var(--border);
       border-radius: 12px;
 
-      background: rgba(255, 255, 255, 0.025);
+      background: rgba(255,255,255,.025);
     }
 
     .process-step::before {
       counter-increment: step;
-
       content: "0" counter(step);
 
       display: block;
-
       margin-bottom: 12px;
 
       color: var(--gold-soft);
 
-      font-size: 0.75rem;
+      font-size: .75rem;
       font-weight: 900;
-
-      letter-spacing: 0.12em;
+      letter-spacing: .12em;
     }
 
     .process-step p {
-      margin-top: 8px;
-
       color: var(--muted);
-
-      font-size: 0.9rem;
+      font-size: .9rem;
+      margin-top: 8px;
     }
 
 
-    /* ================================
+    /* ========================================
        CAPABILITY STATEMENT
-       ================================ */
+       ======================================== */
 
     .capability-box {
       display: grid;
+      grid-template-columns: 1.15fr .85fr;
 
-      grid-template-columns: 1.2fr 0.8fr;
-
-      gap: 40px;
-
+      gap: 48px;
       align-items: center;
 
       padding: 44px;
 
-      border: 1px solid rgba(227, 199, 124, 0.30);
       border-radius: 18px;
+      border: 1px solid rgba(227,199,124,.30);
 
       background:
         linear-gradient(
           135deg,
-          rgba(201, 160, 77, 0.12),
-          rgba(255, 255, 255, 0.025)
+          rgba(201,160,77,.12),
+          rgba(255,255,255,.025)
         );
     }
 
     .capability-box p {
-      max-width: 700px;
-
-      margin: 16px 0 26px;
-
       color: var(--muted);
+      margin: 16px 0 26px;
+      max-width: 700px;
     }
 
     .capability-meta {
       display: grid;
-
-      gap: 12px;
+      gap: 0;
     }
 
     .capability-meta div {
       display: flex;
-
       justify-content: space-between;
-
       gap: 16px;
 
       padding: 12px 0;
@@ -635,45 +556,46 @@
       color: var(--muted);
     }
 
+    .capability-meta strong {
+      text-align: right;
+    }
 
-    /* ================================
+    .active-status {
+      color: var(--gold-soft);
+    }
+
+
+    /* ========================================
        ABOUT
-       ================================ */
+       ======================================== */
 
     .about-grid {
       display: grid;
-
-      grid-template-columns: 0.85fr 1.15fr;
+      grid-template-columns: .85fr 1.15fr;
 
       gap: 70px;
-
       align-items: start;
     }
 
     .about-copy p {
-      margin-bottom: 18px;
-
       color: var(--muted);
+      margin-bottom: 18px;
     }
 
 
-    /* ================================
-       COMPANY INFO
-       ================================ */
+    /* ========================================
+       COMPANY INFORMATION
+       ======================================== */
 
     .info-grid {
       display: grid;
-
       grid-template-columns: repeat(2, 1fr);
-
       gap: 16px 34px;
     }
 
     .info-row {
       display: flex;
-
       justify-content: space-between;
-
       gap: 22px;
 
       padding: 16px 0;
@@ -690,32 +612,29 @@
     }
 
 
-    /* ================================
+    /* ========================================
        CONTACT
-       ================================ */
+       ======================================== */
 
     .contact-grid {
       display: grid;
-
-      grid-template-columns: 0.75fr 1.25fr;
+      grid-template-columns: .75fr 1.25fr;
 
       gap: 48px;
-
       align-items: start;
     }
 
     .contact-card {
-      padding: 30px;
-
       border: 1px solid var(--border);
       border-radius: var(--radius);
 
-      background: rgba(255, 255, 255, 0.025);
+      background: rgba(255,255,255,.025);
+
+      padding: 30px;
     }
 
     .contact-line {
       padding: 15px 0;
-
       border-bottom: 1px solid var(--border);
     }
 
@@ -725,12 +644,9 @@
 
     .contact-line span {
       display: block;
-
-      margin-bottom: 3px;
-
       color: var(--muted);
-
-      font-size: 0.82rem;
+      font-size: .82rem;
+      margin-bottom: 3px;
     }
 
     .contact-line a {
@@ -739,26 +655,22 @@
 
     form {
       display: grid;
-
       gap: 16px;
     }
 
     .form-grid {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
-
       gap: 16px;
     }
 
     label {
       display: grid;
-
       gap: 7px;
 
       color: var(--muted);
 
-      font-size: 0.88rem;
+      font-size: .88rem;
       font-weight: 700;
     }
 
@@ -767,13 +679,13 @@
     select {
       width: 100%;
 
-      padding: 12px 13px;
-
       border: 1px solid var(--border);
       border-radius: 9px;
 
       background: var(--navy-950);
       color: var(--text);
+
+      padding: 12px 13px;
 
       outline: none;
     }
@@ -786,58 +698,50 @@
 
     textarea {
       min-height: 150px;
-
       resize: vertical;
     }
 
     .form-note {
       color: var(--muted);
-
-      font-size: 0.8rem;
+      font-size: .8rem;
     }
 
     .submit {
       cursor: pointer;
-
       border: 0;
     }
 
 
-    /* ================================
+    /* ========================================
        FOOTER
-       ================================ */
+       ======================================== */
 
     footer {
-      padding: 30px 0;
-
       border-top: 1px solid var(--border);
-
+      padding: 30px 0;
       background: var(--navy-950);
     }
 
     .footer-content {
       display: flex;
-
       align-items: center;
       justify-content: space-between;
 
       gap: 20px;
 
       color: var(--muted);
-
-      font-size: 0.88rem;
+      font-size: .88rem;
     }
 
     .footer-links {
       display: flex;
-
       gap: 18px;
     }
 
 
-    /* ================================
+    /* ========================================
        TABLET
-       ================================ */
+       ======================================== */
 
     @media (max-width: 980px) {
 
@@ -854,7 +758,6 @@
 
       .hero-mark {
         width: min(520px, 100%);
-
         margin: 0;
       }
 
@@ -878,15 +781,15 @@
         border-right: 0;
       }
 
-      .trust-item:nth-child(-n + 2) {
+      .trust-item:nth-child(-n+2) {
         border-bottom: 1px solid var(--border);
       }
     }
 
 
-    /* ================================
+    /* ========================================
        MOBILE
-       ================================ */
+       ======================================== */
 
     @media (max-width: 640px) {
 
@@ -900,20 +803,17 @@
 
       .hero-grid {
         padding: 82px 0 70px;
-
         gap: 40px;
       }
 
       .brand-text {
-        font-size: 0.82rem;
-
-        letter-spacing: 0.07em;
+        font-size: .82rem;
+        letter-spacing: .07em;
       }
 
       .nav-cta {
         padding: 9px 11px;
-
-        font-size: 0.82rem;
+        font-size: .82rem;
       }
 
       .hero-mark {
@@ -921,7 +821,6 @@
         max-width: 430px;
 
         padding: 18px;
-
         margin: 0 auto;
       }
 
@@ -950,9 +849,20 @@
         padding: 30px 24px;
       }
 
+      .capability-meta div,
+      .info-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .capability-meta strong,
+      .info-row strong {
+        text-align: left;
+      }
+
       .footer-content {
         align-items: flex-start;
-
         flex-direction: column;
       }
 
@@ -960,17 +870,20 @@
         flex-wrap: wrap;
       }
     }
+
   </style>
 </head>
 
 
 <body>
 
-  <!-- ================================
+
+  <!-- ========================================
        HEADER
-       ================================ -->
+       ======================================== -->
 
   <header>
+
     <nav
       class="container"
       aria-label="Primary navigation"
@@ -981,10 +894,6 @@
         href="#home"
         aria-label="Astraea Industries home"
       >
-
-        <!--
-          Small navigation logo remains the original PNG.
-        -->
 
         <img
           src="AstraeaIndustriesLogo.png"
@@ -1026,15 +935,17 @@
       </div>
 
     </nav>
+
   </header>
+
 
 
   <main>
 
 
-    <!-- ================================
+    <!-- ========================================
          HERO
-         ================================ -->
+         ======================================== -->
 
     <section
       class="hero"
@@ -1047,20 +958,18 @@
         <div class="hero-copy">
 
           <p class="eyebrow">
-            Public-Sector Technology Procurement
+            Government & Public-Sector Technology Procurement
           </p>
 
           <h1>
-            Commercial IT Hardware Procurement
-            for Government & Education
+            Commercial IT Hardware for Government & Education
           </h1>
 
           <p class="lead">
-            Astraea Industries helps public-sector organizations
-            source dependable commercial off-the-shelf technology
-            with responsive quoting, accurate product matching,
-            and clear communication from requirement through
-            delivery.
+            Astraea Industries supplies commercial off-the-shelf
+            technology to public-sector organizations with responsive
+            sourcing, accurate product matching, competitive quoting,
+            and dependable fulfillment.
           </p>
 
 
@@ -1072,7 +981,6 @@
             >
               Request a Quote
             </a>
-
 
             <a
               class="button button-secondary"
@@ -1088,12 +996,6 @@
         </div>
 
 
-        <!--
-          LARGE FRONT-PAGE LOGO.
-
-          This uses your new SVG and is completely
-          independent of the small navigation PNG.
-        -->
 
         <div
           class="hero-mark"
@@ -1107,57 +1009,68 @@
 
         </div>
 
+
       </div>
 
     </section>
 
 
 
-    <!-- ================================
-         TRUST STRIP
-         ================================ -->
+    <!-- ========================================
+         GOVERNMENT REGISTRATION STRIP
+         ======================================== -->
 
     <section
       class="trust-strip"
-      aria-label="Business highlights"
+      aria-label="Government registrations"
     >
 
       <div class="container trust-grid">
 
+
         <div class="trust-item">
+
           <strong>
-            Small Business
+            SAM.gov Active
           </strong>
 
-          New Jersey-based LLC
+          Registered Federal Contractor
+
         </div>
 
 
         <div class="trust-item">
+
           <strong>
-            COTS Technology
+            CAGE 23XR9
           </strong>
 
-          Commercial hardware & software
+          Commercial and Government Entity
+
         </div>
 
 
         <div class="trust-item">
+
           <strong>
-            Public-Sector Focus
+            UEI S2L1TLZMTEQ5
           </strong>
 
-          Government & education buyers
+          Unique Entity Identifier
+
         </div>
 
 
         <div class="trust-item">
+
           <strong>
-            Responsive Sourcing
+            NJSTART Registered
           </strong>
 
-          Requirement-driven procurement
+          New Jersey Public Procurement
+
         </div>
+
 
       </div>
 
@@ -1165,9 +1078,9 @@
 
 
 
-    <!-- ================================
-         PRODUCTS & SOLUTIONS
-         ================================ -->
+    <!-- ========================================
+         PRODUCTS
+         ======================================== -->
 
     <section
       class="section section-soft"
@@ -1184,17 +1097,17 @@
           </p>
 
           <h2>
-            Technology procurement built
-            around the requirement.
+            IT procurement built around the requirement.
           </h2>
 
           <p>
-            We focus on sourcing commercially available
-            IT products and supporting the lifecycle
-            decisions that surround them.
+            Astraea focuses on commercially available technology
+            products for government, education, and other
+            public-sector environments.
           </p>
 
         </div>
+
 
 
         <div class="grid-3">
@@ -1211,10 +1124,12 @@
             </h3>
 
             <ul>
-              <li>Desktop computers</li>
-              <li>Laptop computers</li>
-              <li>Monitors & docking stations</li>
-              <li>Peripherals & accessories</li>
+              <li>Laptops & desktop computers</li>
+              <li>Workstations</li>
+              <li>Monitors & displays</li>
+              <li>Docking stations</li>
+              <li>Keyboards, mice & peripherals</li>
+              <li>Headsets & webcams</li>
             </ul>
 
           </article>
@@ -1233,9 +1148,11 @@
 
             <ul>
               <li>Servers & storage</li>
-              <li>Networking equipment</li>
-              <li>Wireless infrastructure</li>
+              <li>Network switches</li>
+              <li>Wireless access points</li>
+              <li>Network accessories</li>
               <li>UPS & power protection</li>
+              <li>Cables & adapters</li>
             </ul>
 
           </article>
@@ -1245,18 +1162,20 @@
           <article class="card">
 
             <p class="card-kicker">
-              Lifecycle Support
+              AV & Specialized Hardware
             </p>
 
             <h3>
-              Planning & Product Sourcing
+              Technology Beyond the Desktop
             </h3>
 
             <ul>
-              <li>Technology refresh planning</li>
-              <li>Asset lifecycle planning</li>
-              <li>Product sourcing</li>
-              <li>Technology consulting</li>
+              <li>Projectors</li>
+              <li>Commercial displays</li>
+              <li>Audio / visual equipment</li>
+              <li>Conference-room hardware</li>
+              <li>Technology accessories</li>
+              <li>Requirement-specific COTS hardware</li>
             </ul>
 
           </article>
@@ -1270,9 +1189,9 @@
 
 
 
-    <!-- ================================
+    <!-- ========================================
          MARKETS
-         ================================ -->
+         ======================================== -->
 
     <section
       class="section"
@@ -1293,9 +1212,9 @@
           </h2>
 
           <p>
-            Astraea Industries is positioned to support
-            technology requirements across federal,
-            state, local, and education environments.
+            We pursue technology requirements across federal,
+            state, local, and education markets throughout the
+            United States.
           </p>
 
         </div>
@@ -1325,15 +1244,16 @@
 
         </div>
 
+
       </div>
 
     </section>
 
 
 
-    <!-- ================================
-         PROCUREMENT PROCESS
-         ================================ -->
+    <!-- ========================================
+         PROCESS
+         ======================================== -->
 
     <section
       class="section section-dark"
@@ -1350,15 +1270,17 @@
           </p>
 
           <h2>
-            A straightforward procurement process.
+            From requirement to delivery.
           </h2>
 
           <p>
-            Our goal is to reduce friction between
-            the requirement and the delivered product.
+            A straightforward procurement process designed
+            around clear requirements, responsive communication,
+            and dependable fulfillment.
           </p>
 
         </div>
+
 
 
         <div class="process">
@@ -1371,8 +1293,8 @@
             </strong>
 
             <p>
-              Send the specification, part number,
-              BOM, or RFQ.
+              Send the specification, part number, bill of
+              materials, or RFQ.
             </p>
 
           </div>
@@ -1386,8 +1308,8 @@
             </strong>
 
             <p>
-              We identify commercially available
-              products that match the requirement.
+              We source commercially available products that
+              match the requirement.
             </p>
 
           </div>
@@ -1401,8 +1323,8 @@
             </strong>
 
             <p>
-              You receive clear pricing and product
-              information for review.
+              Receive clear pricing and product information
+              for review.
             </p>
 
           </div>
@@ -1416,8 +1338,8 @@
             </strong>
 
             <p>
-              Upon award or purchase order,
-              we coordinate fulfillment.
+              Upon award or purchase order, Astraea coordinates
+              procurement and fulfillment.
             </p>
 
           </div>
@@ -1431,8 +1353,8 @@
             </strong>
 
             <p>
-              Products are delivered according
-              to the agreed requirement.
+              Products are delivered according to the agreed
+              requirement and destination.
             </p>
 
           </div>
@@ -1440,15 +1362,16 @@
 
         </div>
 
+
       </div>
 
     </section>
 
 
 
-    <!-- ================================
+    <!-- ========================================
          CAPABILITY STATEMENT
-         ================================ -->
+         ======================================== -->
 
     <section
       class="section section-soft"
@@ -1464,17 +1387,18 @@
           <div>
 
             <p class="eyebrow">
-              Capability Statement
+              Federal & Public-Sector Ready
             </p>
 
             <h2>
-              Company qualifications at a glance.
+              Astraea Industries LLC
             </h2>
 
             <p>
-              Review Astraea Industries' current capabilities,
-              business classifications, technical expertise,
-              product categories, and target customers.
+              Review our capability statement for company
+              information, procurement capabilities, product
+              categories, business classifications, and
+              government identifiers.
             </p>
 
 
@@ -1488,7 +1412,6 @@
               >
                 Open Capability Statement
               </a>
-
 
               <a
                 class="button button-secondary"
@@ -1506,35 +1429,54 @@
 
           <div class="capability-meta">
 
+
             <div>
-              <span>Legal Name</span>
-              <strong>Astraea Industries LLC</strong>
+              <span>SAM.gov</span>
+              <strong class="active-status">Active</strong>
             </div>
+
+
+            <div>
+              <span>CAGE Code</span>
+              <strong>23XR9</strong>
+            </div>
+
+
+            <div>
+              <span>UEI</span>
+              <strong>S2L1TLZMTEQ5</strong>
+            </div>
+
 
             <div>
               <span>Primary NAICS</span>
               <strong>423430</strong>
             </div>
 
+
             <div>
               <span>Secondary NAICS</span>
               <strong>541519</strong>
             </div>
+
 
             <div>
               <span>Business Type</span>
               <strong>Small Business</strong>
             </div>
 
+
             <div>
-              <span>UEI / CAGE</span>
-              <strong>Pending</strong>
+              <span>NJSTART</span>
+              <strong>Registered</strong>
             </div>
+
 
           </div>
 
 
         </div>
+
 
       </div>
 
@@ -1542,9 +1484,9 @@
 
 
 
-    <!-- ================================
+    <!-- ========================================
          ABOUT
-         ================================ -->
+         ======================================== -->
 
     <section
       class="section"
@@ -1561,8 +1503,7 @@
           </p>
 
           <h2>
-            Procurement informed by
-            public-sector IT experience.
+            Procurement informed by public-sector IT experience.
           </h2>
 
         </div>
@@ -1573,25 +1514,23 @@
 
           <p>
             Astraea Industries LLC is a New Jersey-based
-            small business focused on commercial IT
-            procurement and lifecycle planning for
-            public-sector organizations.
+            small business focused on commercial IT hardware
+            procurement for government and education customers.
           </p>
 
           <p>
-            Our technical background includes hands-on
-            experience in public-sector IT environments,
-            endpoint deployment, device lifecycle management,
-            networking, and enterprise technology support.
-            That perspective helps us understand the
-            operational context behind a technology
-            requirement—not just the line item.
+            Our background includes hands-on experience in
+            public-sector IT environments, endpoint deployment,
+            device lifecycle management, networking, and
+            enterprise technology support. That perspective
+            helps us understand the operational requirement
+            behind the equipment—not simply the line item.
           </p>
 
           <p>
-            We are building Astraea around a simple standard:
-            accurate sourcing, transparent communication,
-            and dependable execution.
+            Astraea is built around a straightforward standard:
+            accurate sourcing, responsive communication,
+            competitive procurement, and dependable execution.
           </p>
 
         </div>
@@ -1603,9 +1542,9 @@
 
 
 
-    <!-- ================================
-         COMPANY INFO
-         ================================ -->
+    <!-- ========================================
+         COMPANY INFORMATION
+         ======================================== -->
 
     <section
       class="section section-soft"
@@ -1622,52 +1561,153 @@
           </p>
 
           <h2>
-            Business classifications & expertise.
+            Government registration & business information.
           </h2>
 
+          <p>
+            Key information for contracting officers,
+            purchasing departments, and procurement personnel.
+          </p>
+
         </div>
+
 
 
         <div class="info-grid">
 
 
           <div class="info-row">
-            <span>Legal Name</span>
-            <strong>Astraea Industries LLC</strong>
+
+            <span>
+              Legal Name
+            </span>
+
+            <strong>
+              Astraea Industries LLC
+            </strong>
+
           </div>
 
 
           <div class="info-row">
-            <span>Location</span>
-            <strong>New Jersey, USA</strong>
+
+            <span>
+              Location
+            </span>
+
+            <strong>
+              New Jersey, USA
+            </strong>
+
           </div>
 
 
           <div class="info-row">
-            <span>Primary NAICS</span>
-            <strong>423430</strong>
+
+            <span>
+              SAM.gov Status
+            </span>
+
+            <strong class="active-status">
+              Active
+            </strong>
+
           </div>
 
 
           <div class="info-row">
-            <span>Secondary NAICS</span>
-            <strong>541519</strong>
+
+            <span>
+              CAGE Code
+            </span>
+
+            <strong>
+              23XR9
+            </strong>
+
           </div>
 
 
           <div class="info-row">
-            <span>CompTIA</span>
-            <strong>A+ / Network+ / Security+</strong>
+
+            <span>
+              Unique Entity ID
+            </span>
+
+            <strong>
+              S2L1TLZMTEQ5
+            </strong>
+
           </div>
 
 
           <div class="info-row">
-            <span>UEI / CAGE</span>
-            <strong>Pending</strong>
+
+            <span>
+              NJSTART
+            </span>
+
+            <strong>
+              Registered
+            </strong>
+
+          </div>
+
+
+          <div class="info-row">
+
+            <span>
+              Primary NAICS
+            </span>
+
+            <strong>
+              423430
+            </strong>
+
+          </div>
+
+
+          <div class="info-row">
+
+            <span>
+              Secondary NAICS
+            </span>
+
+            <strong>
+              541519
+            </strong>
+
+          </div>
+
+
+          <div class="info-row">
+
+            <span>
+              Business Type
+            </span>
+
+            <strong>
+              Small Business
+            </strong>
+
+          </div>
+
+
+          <div class="info-row">
+
+            <span>
+              Service Area
+            </span>
+
+            <strong>
+              United States
+            </strong>
+
           </div>
 
 
         </div>
+
 
       </div>
 
@@ -1675,9 +1715,9 @@
 
 
 
-    <!-- ================================
-         CONTACT
-         ================================ -->
+    <!-- ========================================
+         CONTACT / RFQ
+         ======================================== -->
 
     <section
       class="section section-dark"
@@ -1694,17 +1734,18 @@
           </p>
 
           <h2>
-            Send us your technology requirement.
+            Send us your IT hardware requirement.
           </h2>
 
           <p
             class="lead"
-            style="margin: 18px 0 28px;"
+            style="margin:18px 0 28px;"
           >
             Part numbers, specifications, quantities,
-            delivery requirements, and RFQ documents
-            are all welcome.
+            delivery requirements, bills of materials,
+            and RFQ information are welcome.
           </p>
+
 
 
           <div class="contact-card">
@@ -1713,7 +1754,7 @@
             <div class="contact-line">
 
               <span>
-                Email
+                Sales
               </span>
 
               <a href="mailto:sales@astraeaindustries.com">
@@ -1721,7 +1762,6 @@
               </a>
 
             </div>
-
 
 
             <div class="contact-line">
@@ -1737,7 +1777,6 @@
             </div>
 
 
-
             <div class="contact-line">
 
               <span>
@@ -1750,6 +1789,18 @@
 
             </div>
 
+
+            <div class="contact-line">
+
+              <span>
+                CAGE
+              </span>
+
+              <strong>
+                23XR9
+              </strong>
+
+            </div>
 
 
             <div class="contact-line">
@@ -1766,6 +1817,7 @@
 
 
           </div>
+
 
         </div>
 
@@ -1862,26 +1914,53 @@
               >
 
                 <option>
-                  Hardware Procurement
+                  Computers / Workstations
                 </option>
 
                 <option>
-                  Software / Licensing
+                  Networking Equipment
                 </option>
 
                 <option>
-                  Technology Refresh
+                  Servers / Storage
                 </option>
 
                 <option>
-                  Product Sourcing
+                  Displays / AV Equipment
                 </option>
 
                 <option>
-                  Other
+                  Peripherals / Accessories
+                </option>
+
+                <option>
+                  UPS / Power Equipment
+                </option>
+
+                <option>
+                  Multi-Item / BOM
+                </option>
+
+                <option>
+                  Other IT Hardware
                 </option>
 
               </select>
+
+            </label>
+
+
+
+            <label>
+
+              Solicitation / RFQ Number
+
+              <input
+                id="solicitation"
+                name="solicitation"
+                type="text"
+                placeholder="Optional"
+              />
 
             </label>
 
@@ -1894,7 +1973,7 @@
               <textarea
                 id="details"
                 name="details"
-                placeholder="Include product names or part numbers, quantities, required delivery date, ship-to location, and any solicitation/RFQ number."
+                placeholder="Include product names or part numbers, quantities, required delivery date, ship-to location, and any other applicable requirements."
                 required
               ></textarea>
 
@@ -1912,10 +1991,9 @@
 
 
             <p class="form-note">
-              This version prepares an email in your default
-              mail application so you can review the request
-              before sending. A direct web submission endpoint
-              can be added later without redesigning the page.
+              This form prepares an email in your default
+              mail application so you can review the
+              requirement before sending.
             </p>
 
 
@@ -1934,9 +2012,9 @@
 
 
 
-  <!-- ================================
+  <!-- ========================================
        FOOTER
-       ================================ -->
+       ======================================== -->
 
   <footer>
 
@@ -1944,7 +2022,7 @@
 
 
       <span>
-        © 2026 Astraea Industries LLC · New Jersey, USA
+        © 2026 Astraea Industries LLC · New Jersey, USA · CAGE 23XR9
       </span>
 
 
@@ -1965,6 +2043,11 @@
         </a>
 
 
+        <a href="#company-info">
+          Company Information
+        </a>
+
+
       </div>
 
 
@@ -1974,9 +2057,9 @@
 
 
 
-  <!-- ================================
+  <!-- ========================================
        RFQ EMAIL SCRIPT
-       ================================ -->
+       ======================================== -->
 
   <script>
 
@@ -2021,6 +2104,13 @@
             .value;
 
 
+        const solicitation =
+          document
+            .getElementById("solicitation")
+            .value
+            .trim();
+
+
         const details =
           document
             .getElementById("details")
@@ -2047,7 +2137,9 @@
 
             `Phone: ${phone || "Not provided"}\n` +
 
-            `Requirement Type: ${type}\n\n` +
+            `Requirement Type: ${type}\n` +
+
+            `Solicitation / RFQ Number: ${solicitation || "Not provided"}\n\n` +
 
             `Requirement Details:\n${details}`
 
